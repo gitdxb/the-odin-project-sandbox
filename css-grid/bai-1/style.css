@@ -1,0 +1,16 @@
+html {
+    box-sizing: border-box;
+    background: #000;
+}
+.item {
+    border: 5px solid rgb(255, 8, 8);
+    background-color: yellow;
+    padding: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 100px repeat(2, 1fr) 100px;
+    }

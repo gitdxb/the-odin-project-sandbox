@@ -1,6 +1,8 @@
 html {
     box-sizing: border-box;
     background: #000;
+    font-family: "Arial";
+    font-size: 20px;
 }
 .item {
     border: 5px solid rgb(255, 8, 8);
@@ -12,5 +14,17 @@ html {
 .container {
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: 100px repeat(2, 1fr) 100px;
+    grid-template-columns: repeat(5, 1fr);
     }
+.item9 {
+    background: mistyrose;
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+/* Place item where we want */
+.poop {
+    background: white;
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    /* Similarly: grid-column: 2/5; */
